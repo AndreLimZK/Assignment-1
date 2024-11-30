@@ -1,1 +1,96 @@
+/* Reset basic styling for consistency across browsers */
+body, h1, a, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #333;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+/* Style for the heading (left side) */
+h1 {
+    color: #eea804;
+    font-size: 75px;
+    margin-right: 20px; /* Space between heading and nav */
+    white-space: nowrap; /* Prevent the heading from wrapping */
+    flex-shrink: 0; /* Prevent shrinking of the heading */
+    width: 100%; /* Allow heading to take up full width in small screens */
+    text-align: left;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+#nav-box-words {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px; /* Space between links */
+    width: 100%;
+}
+
+/* Styling for navigation links */
+.nav-bar {
+    text-decoration: none;
+    color: #eea804;
+    font-size: 28px;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.nav-bar:hover {
+    background-color: #f0a500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+
+    .nav-bar {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        font-size: 14px;
+        padding: 5px 10px;
+        width: 100%; /* Make each link full-width on small screens */
+        text-align: center;
+    }
+
+    #nav-box-words {
+        gap: 5px;
+    }
+}
 
