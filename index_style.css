@@ -6,12 +6,14 @@ body, h1, a, ul, li {
 }
 
 /* Body styling */
-body {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+body { 
+    background-color: #0f0f0f; 
+    background-image: url("Media/Tree.png"); 
+    background-size: cover; /* Adjusts the image to cover the entire background */ 
+    background-position: center; /* Centers the background image */ 
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */ 
+    background-attachment: fixed; /* Fixes the background image in place */ 
     min-height: 100vh;
-    background-color: #333;
 }
 
 /* Header styling */
@@ -19,33 +21,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
+    background-color: #0f0f0f;
+    padding: 10px 15px;
     width: 100%;
 }
 
 /* Style for the heading (left side) */
 h1 {
     color: #eea804;
-    font-size: 75px;
-    margin-right: 20px; /* Space between heading and nav */
-    white-space: nowrap; /* Prevent the heading from wrapping */
-    flex-shrink: 0; /* Prevent shrinking of the heading */
-    width: 100%; /* Allow heading to take up full width in small screens */
-    text-align: left;
+    font-size: 65px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    text-align: center;
+    margin: 2%;
 }
 
 /* Navigation styling */
 nav {
     display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
+    justify-content: center;
+    width: 100%;
+    margin-right: 2%; 
 }
 
 #nav-box-words {
     display: flex;
-    justify-content: flex-start;
-    gap: 20px; /* Space between links */
+    justify-content: flex-end;
+    gap: 10px;
     width: 100%;
 }
 
@@ -53,14 +55,10 @@ nav {
 .nav-bar {
     text-decoration: none;
     color: #eea804;
-    font-size: 28px;
+    font-size: 25px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #0f0f0f;
     border-radius: 5px;
-}
-
-.nav-bar:hover {
-    background-color: #f0a500;
 }
 
 /* Responsive adjustments */
@@ -93,4 +91,3 @@ nav {
         gap: 5px;
     }
 }
-
