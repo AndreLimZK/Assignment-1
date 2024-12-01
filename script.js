@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const email = emailInput.value;
         const message = document.getElementById('userEnquiry').value;
 
+        /*check if the fields have been filled in */
+        if (!email || !message) {
+            alert('Please fill out both fields.');
+            return;
+        }
+
         /* simple email validation */
         if (!validateEmail(email)) {
             alert('Please enter a valid email address.');

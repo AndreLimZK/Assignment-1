@@ -1,5 +1,7 @@
 /* Body styling */
 body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
     background-color: #0f0f0f;
     background-image: url("Media/backgroundTree.png");
     background-size: cover;
@@ -265,13 +267,18 @@ main {
     padding: 5px 10px;
 }
 
-.event-date, .event-venue, button{
+.event-date {
     flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.event-venue {
+    flex: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    text-align: center;
 }
 
 button {
@@ -313,7 +320,7 @@ button.tickets:hover {
 .album {
     padding: 10px;
     text-align: center;
-    background-color: rgba(50, 50, 50, 0.7);
+    background-color: rgba(50, 50, 50, 0.3);
 }
 
 .album-title {
