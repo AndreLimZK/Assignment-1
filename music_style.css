@@ -1,0 +1,136 @@
+/* Body styling */
+body {
+    background-color: #0f0f0f;
+    background-image: url("Media/Tree.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #0f0f0f; 
+    box-sizing: border-box;
+}
+
+/* Style for the heading */ 
+h1 { 
+    color: #eea804; 
+    font-size: 5vw; 
+    flex-shrink: 0; 
+    white-space: nowrap; /* Prevent text wrapping */
+} 
+
+h2 { 
+    color: #eea804; 
+    font-size: 3vw; 
+    flex-shrink: 0; 
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+h3 { 
+    color: #eea804; 
+    font-size: 1.5vw; 
+    flex-shrink: 0; 
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#nav-box-words {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap
+}
+
+.nav-bar {
+    text-decoration: none;
+    color: #eea804;
+    font-size: 1.5vw;
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    border-radius: 5px;
+}
+
+#blur{
+    transition: 0.2s;
+}
+
+#blur.active{
+    filter: blur(20px);
+}
+
+.popup{
+    position: fixed;
+    top: 1vh;
+    margin-left: 10vw;
+    visibility: hidden;
+    transition: 0.5s;   
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3vmin;
+}
+
+.popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s top;
+
+}
+
+#videopopup iframe{
+    width: 80vw;
+    height: 45vw;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-bar {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    .box-image {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        font-size: 14px;
+        padding: 5px 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav div {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .box-image {
+        height: 100px;
+    }
+}
+
