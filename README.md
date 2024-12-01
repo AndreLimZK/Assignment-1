@@ -9,6 +9,7 @@ The ‘Shows’ page presents an elegant, coherent structure, all concert dates 
 # Design Process
 The website was designed with the intention of keeping the band's new album in mind not only as a form of promotion but also to represent the new direction that they decided to take their music. 
 
+here is the figma link of the wireframe i used, https://www.figma.com/design/Kz4eQVVZPr0ZxLSx627LSE/ID_ASG1_Wireframes?node-id=0-1&t=O5BQ6Ewpvvb2pk8k-1
 
 # Features
 Feature 1 - allows users to fill in their email and questions using the enquiry form at the bottom of the footer to stay connected with the band using javascript
