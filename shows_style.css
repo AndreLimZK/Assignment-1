@@ -1,12 +1,13 @@
 /* Body styling */
 body {
     background-color: #0f0f0f;
-    background-image: url("Media/Tree.png");
+    background-image: url("Media/backgroundTree.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Container styling */
@@ -17,81 +18,27 @@ body {
     box-sizing: border-box;
 }
 
-/* Header styling */
-header {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    background-color: #0f0f0f; 
-    box-sizing: border-box;
-}
-
-/* Style for the heading */ 
-h1 { 
-    color: #eea804; 
-    font-size: 5vw; 
-    flex-shrink: 0; 
-    white-space: nowrap; /* Prevent text wrapping */
-} 
-
-h2 { 
-    color: #eea804; 
-    font-size: 3vw; 
-    flex-shrink: 0; 
-    white-space: nowrap; /* Prevent text wrapping */
-}
-
-h3 { 
-    color: #eea804; 
-    font-size: 1.5vw; 
-    flex-shrink: 0; 
-    white-space: nowrap; /* Prevent text wrapping */
-}
-
-/* Navigation styling */
-nav {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-    margin-bottom: 20px;
-}
-
-#nav-box-words {
-    display: flex;
-    gap: 10px;
-    flex-wrap: nowrap
-}
-
-.nav-bar {
-    text-decoration: none;
-    color: #eea804;
-    font-size: 1.5vw;
-    padding: 10px 20px;
-    background-color: #0f0f0f;
-    border-radius: 5px;
-}
-
+/* Footer styling */
 footer {
     background-color: #0f0f0f;
     color: #eea804;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
     border-top: 1px solid #ccc;
 }
 
 .footer-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    padding: 0 10%;
 }
 
 .footer-container .social-media,
 .footer-container .enquiry {
     flex: 1; /* Allow each section to take equal space */
-    max-width: 45%; /* Ensure the sections don't exceed 45% of the container width */
+    min-width: 200px; /* Ensure minimum width for each section */
 }
 
 .footer-container .social-media h3,
@@ -116,6 +63,7 @@ footer {
     width: 90%;
     padding: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #000;
@@ -138,8 +86,108 @@ footer {
     border: 1px solid #eea804;
 }
 
+/* Header styling */
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #0f0f0f; 
+    box-sizing: border-box;
+}
 
+/* style for the heading */ 
+h1 { 
+    color: #eea804; 
+    font-size: 5vw; 
+    flex-shrink: 0; 
+    white-space: nowrap; /* prevent text wrapping */
+} 
 
+h2 { 
+    color: #eea804; 
+    font-size: 3vw; 
+    flex-shrink: 0; 
+    white-space: nowrap; /* prevent text wrapping */
+}
+
+h3 { 
+    color: #eea804; 
+    font-size: 1.5vw; 
+    flex-shrink: 0; 
+    white-space: nowrap; /* prevent text wrapping */
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+#nav-box-words {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap
+}
+
+.nav-bar {
+    text-decoration: none;
+    color: #eea804;
+    font-size: 1.5vw;
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    border-radius: 5px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.event { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    color: #eea804;
+}
+
+.event-date, event-venue {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.tickets {
+    background-color: #eea804;
+    color: black;
+}
+
+button.tickets:hover {
+    background-color: #4cae4c;
+}
+
+#confirmation { 
+    margin-top: 20px; 
+    font-size: 1.2em; 
+    color: green; 
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

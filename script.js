@@ -2,23 +2,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const enquiryFormButton = document.getElementById('submitEnquiry');
 
     enquiryFormButton.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the form from submitting the traditional way
+        event.preventDefault(); /* prevent the form from being submitted on accident or being misused by users */
 
-        // Get the form data
+        /* get the form data */
         const emailInput = document.getElementById('userEmail');
         const email = emailInput.value;
         const message = document.getElementById('userEnquiry').value;
 
-        // Basic email validation
+        /* simple email validation */
         if (!validateEmail(email)) {
             alert('Please enter a valid email address.');
             return;
         }
 
-        // Display a confirmation message
+        /* display confirmation message */
         if (email && message) {
             alert('Thank you for your enquiry! We will get back to you soon.');
-            // Clear the form fields
+            /* clear the form fields */
             emailInput.value = '';
             document.getElementById('userEnquiry').value = '';
         } else {
@@ -26,12 +26,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    /* purchasing of tickets */
+    window.redirectToWebsite = function(url) {
+        window.open(url, '_blank');
+    };
+
     function validateEmail(email) {
-        // Check for the presence of "@" and "."
+        /* check for the presence of "@" and "." */
         const atSymbolIndex = email.indexOf('@');
         const dotIndex = email.lastIndexOf('.');
 
-        // Ensure "@" is present and followed by "."
+        /* check if "@" is present and followed by "." */
         if (atSymbolIndex > 0 && dotIndex > atSymbolIndex + 1 && dotIndex < email.length - 1) {
             return true;
         }
