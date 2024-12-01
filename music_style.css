@@ -1,7 +1,7 @@
 /* Body styling */
 body {
     background-color: #0f0f0f;
-    background-image: url("Media/Tree.png");
+    background-image: url("Media/backgroundTree.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,17 +75,16 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    padding: 20px;
+    padding: 10px;
 }
 .album {
-    border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #0f0f0f;
 }
 .album-title {
     font-weight: bold;
-    color: #333;
+    color: #eea804;
 }
 
 footer {
