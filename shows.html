@@ -15,6 +15,7 @@
         <header>
             <h1>SNOW PATROL</h1>
         </header>
+        <!-- navigation bar -->
         <nav>
             <div>
                 <a class="nav-bar" id="home" href="index.html"> HOME </a>
@@ -22,15 +23,19 @@
                 <a class="nav-bar" id="shows" href="shows.html"> SHOWS </a>
             </div>
         </nav>
-
+        <!-- main part of the body -->
         <main>
             <div class="event-list">
                 <div class="event">
+                    <!-- event date-->
                     <p class="event-date">30/01/2025</p>
+                    <!-- event venue-->
                     <p class="event-venue">L'OLYMPIA - PARIS, FRANCE</p> 
+                    <!-- button to redirect users to ticketing websites-->
                     <button class="tickets" onclick="redirectToWebsite('https://www.viagogo.com/ww/Concert-Tickets/Pop-Rock/Alternative-Indie-Rock/Alternative-Pop-Rock/Snow-Patrol-Tickets/E-153673914?quantity=0')">TICKETS</button>
                 </div>
             </div>
+            <!-- repeat the process for each event listed-->
             <div class="event-list">
                 <div class="event">
                     <p class="event-date">01/02/2025</p>
@@ -100,6 +105,7 @@
                 <a href="https://instagram.com/snowpatrol" target="_blank">Instagram</a>
                 <a href="https://youtube.com/snowpatrol" target="_blank">YouTube</a>
             </div>
+            <!-- enquiry form -->
             <div class="enquiry">
                 <input type="email" id="userEmail" placeholder="johndoe@gmail.com" required="">
                 <textarea id="userEnquiry" placeholder="Ask us anything!" required=""></textarea>
@@ -108,6 +114,7 @@
         </div>
     </footer>
 
+    <!-- javascript to enable enquiry form's buttons and the buttons that redirect users to ticketing websites -->
     <script src="script.js"></script>
 
 </body>

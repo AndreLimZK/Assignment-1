@@ -1,4 +1,4 @@
-/* Body styling */
+/* body styling */
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Container styling */
+/* container styling */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -20,7 +20,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Footer styling */
+/* footer styling */
 footer {
     background-color: #0f0f0f;
     color: #eea804;
@@ -39,8 +39,8 @@ footer {
 
 .footer-container .social-media,
 .footer-container .enquiry {
-    flex: 1; /* Allow each section to take equal space */
-    min-width: 200px; /* Ensure minimum width for each section */
+    flex: 1; 
+    min-width: 200px; 
 }
 
 .footer-container .social-media h3,
@@ -88,7 +88,7 @@ footer {
     border: 1px solid #eea804;
 }
 
-/* Header styling */
+/* header styling */
 header {
     display: flex;
     justify-content: space-between;
@@ -97,29 +97,29 @@ header {
     box-sizing: border-box;
 }
 
-/* Style for the heading */
+/* style for the heading */
 h1 {
     color: #eea804;
     font-size: 5vw;
     flex-shrink: 0;
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap; /* prevent text wrapping */
 }
 
 h2 {
     color: #eea804;
     font-size: 3vw;
     flex-shrink: 0;
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap; /* prevent text wrapping */
 }
 
 h3 {
     color: #eea804;
     font-size: 1.5vw;
     flex-shrink: 0;
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap; /* prevent text wrapping */
 }
 
-/* Navigation styling */
+/* navigation bar styling */
 nav {
     display: flex;
     justify-content: left;
@@ -142,7 +142,7 @@ nav {
     border-radius: 5px;
 }
 
-/* Content styling */
+/* content styling */
 .content {
     display: flex;
     flex-direction: column;
@@ -171,7 +171,7 @@ nav {
     margin-bottom: 10px;
 }
 
-/* about us */
+/* about us section */
 .content-page {
     display: flex;
     flex-direction: column;
@@ -187,7 +187,7 @@ nav {
     margin-bottom: 10px;
 }
 
-/* band members */
+/* band members section */
 .box-size {
     display: flex;
     width: 30%;
@@ -231,15 +231,18 @@ nav {
     font-size: 2vw;
 }
 
+/* change color to fit aesthetic*/
 a {
     text-decoration: none;
     color: #eea804
 }
 
+/* make the interactive buttons appear interactive */
 a:hover {
     text-decoration: underline;
 }
 
+/* events sections */
 main {
     margin-top: 20px;
 }
@@ -331,7 +334,7 @@ button.tickets:hover {
     text-align: center;
 }
 
-/* Responsive adjustments */
+/* responsive adjustments */
 @media (max-width: 768px) {
     .nav-bar {
         font-size: 18px;
