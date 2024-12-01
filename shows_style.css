@@ -113,7 +113,7 @@ footer {
 
 .footer-container .enquiry input,
 .footer-container .enquiry textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -137,6 +137,7 @@ footer {
     color: #eea804;
     border: 1px solid #eea804;
 }
+
 
 
 
