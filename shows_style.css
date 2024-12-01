@@ -71,23 +71,6 @@ nav {
     border-radius: 5px;
 }
 
-.catalogue {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    padding: 20px;
-}
-.album {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-.album-title {
-    font-weight: bold;
-    color: #333;
-}
-
 footer {
     background-color: #0f0f0f;
     color: #eea804;
@@ -186,4 +169,3 @@ footer {
         height: 100px;
     }
 }
-
